@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="10" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="automate.testcomponents.Listeners"/>
+  </listeners>
+  <test thread-count="10" parallel="tests" name="Test2(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="purchase"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="automate.tests.ErrorValidations">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+          <include name="loginErrorValidation"/>
+          <include name="productErrorValidation"/>
+        </methods>
+      </class> <!-- automate.tests.ErrorValidations -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="10" parallel="tests" name="Test1(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="purchase"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="automate.tests.TestPage">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+          <include name="runTest"/>
+        </methods>
+      </class> <!-- automate.tests.TestPage -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
