@@ -84,6 +84,6 @@ public class BaseTest {
 		driver.quit();
 
 	}
-	//StartCode
+	//StarterCode
 
 }
