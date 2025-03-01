@@ -44,5 +44,5 @@ public class CartPage extends AbstractComponents {
 		return pp;
 
 	}
-
+// waitforvisibility
 }
